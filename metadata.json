@@ -1,0 +1,11 @@
+{
+  "name": "AMANITECH ACADEMY",
+  "description": "A Amanitech Academy é a plataforma educacional da AMANITECH – Technology and Sustainability dedicada a formar o capital humano que conduzirá a transformação digital e climática da República Democrática do Congo e do continente africano. Combinando adaptive learning que personaliza trilhas de conhecimento conforme o ritmo, o perfil e os objetivos de cada aluno, e adaptive streaming que garante acesso contínuo às videoaulas mesmo em regiões com conectividade limitada, a Academy oferece cursos profissionalizantes de alto nível em tecnologia, inovação, sustentabilidade e mercados climáticos, desenhados para profissionais, estudantes, gestores públicos, líderes comunitários, empreendedores e investidores. Mais do que uma escola online, a Amanitech Academy é um instrumento estratégico de soberania: ao democratizar o acesso ao conhecimento sobre economia verde, finanças climáticas e transformação digital, capacitamos a próxima geração africana para que o continente deixe de ser apenas guardião dos maiores sumidouros de carbono do planeta e passe a ser protagonista na criação, certificação e comercialização dos ativos ambientais que definirão a economia das próximas décadas.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

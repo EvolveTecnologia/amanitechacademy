@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Defensive window.fetch compatibility fix for extensions / test runners -->
+    <script>
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          var _currentFetch = _origFetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() { return _currentFetch; },
+            set: function(val) { _currentFetch = val; }
+          });
+        } catch(e) {}
+      })();
+    </script>
+    
+    <!-- Primary Meta Tags -->
+    <title>Amanitech Academy - Plateforme d'Apprentissage, Technologie &amp; Climat | AMANITECH</title>
+    <meta name="title" content="Amanitech Academy - Plateforme d'Apprentissage, Technologie &amp; Climat | AMANITECH">
+    <meta name="description" content="Amanitech Academy : la plateforme éducative de l'AMANITECH formant le capital humain pour la transformation digitale et climatique de la République Démocratique du Congo et du continent africain. Adaptive Learning et Adaptive Streaming.">
+    <meta name="keywords" content="Amanitech Academy, AMANITECH, adaptive learning, adaptive streaming, climat, RDC, Kinshasa, e-learning, streaming éducatif, leadership, compétences professionnelles, certifications, économie verte, crédits carbone">
+    <meta name="author" content="AMANITECH - Technology and Sustainability">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Amanitech Academy">
+    <meta property="og:url" content="https://amanitech.academy/">
+    <meta property="og:title" content="Amanitech Academy - Technologie Éducative &amp; Souveraineté Climatique">
+    <meta property="og:description" content="Plateforme d'adaptive learning et de streaming pédagogique conçue pour former et autonomiser les leaders et talents en République Démocratique du Congo et en Afrique.">
+    
+    <!-- Primary OG Landscape Image (1200x630 JPEG for 100% WhatsApp / Social compatibility) -->
+    <meta property="og:image" content="https://amanitech.academy/og-image.jpg">
+    <meta property="og:image:secure_url" content="https://amanitech.academy/og-image.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Amanitech Academy - Plateforme de Technologie Éducative &amp; Climat RDC">
+
+    <!-- Secondary OG PNG Fallback -->
+    <meta property="og:image" content="https://amanitech.academy/og-image.png">
+    <meta property="og:image:secure_url" content="https://amanitech.academy/og-image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Square OG Image (800x800) for WhatsApp compact mobile cards -->
+    <meta property="og:image" content="https://amanitech.academy/og-square.jpg">
+    <meta property="og:image:secure_url" content="https://amanitech.academy/og-square.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:alt" content="Logo Amanitech Academy Officiel">
+
+    <link rel="image_src" href="https://amanitech.academy/og-image.jpg">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@amanitech_academy">
+    <meta name="twitter:title" content="Amanitech Academy - Technologie Éducative &amp; Climat | AMANITECH">
+    <meta name="twitter:description" content="Formations certifiantes, adaptive streaming et adaptive learning pour former le capital humain en RDC et en Afrique.">
+    <meta name="twitter:image" content="https://amanitech.academy/og-image.jpg">
+    <meta name="twitter:image:alt" content="Amanitech Academy - Technologie et Climat en RDC">
+
+    <!-- Dynamic Origin OG Synchronizer for client execution -->
+    <script>
+      (function() {
+        try {
+          if (window.location.origin && !window.location.origin.includes('file://')) {
+            var origin = window.location.origin;
+            var ogUrl = document.querySelector('meta[property="og:url"]');
+            if (ogUrl) ogUrl.setAttribute('content', origin + window.location.pathname);
+          }
+        } catch(e) {}
+      })();
+    </script>
+
+    <!-- PWA & Mobile Optimization -->
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="alternate" type="application/json" href="/manifest.json">
+    <meta name="theme-color" content="#12181A">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Amanitech Academy">
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Schema.org JSON-LD Structured Data for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Amanitech Academy",
+      "alternateName": "AMANITECH ACADEMY",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All",
+      "description": "Plateforme éducative de l'AMANITECH dédiée à former le capital humain qui conduira la transformation digitale et climatique de la République Démocratique du Congo et du continent africain.",
+      "url": "https://amanitech.academy",
+      "image": "/og-image.png",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "AMANITECH - Technology and Sustainability",
+        "url": "https://amanitech.academy"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: '#1BA9A2',
+                'primary-hover': '#148F89',
+                'primary-dark': '#148F89',
+                'primary-deep': '#0E6B66',
+                'primary-tint': '#E6F7F6',
+                'primary-light': '#1BA9A2',
+                orange: '#F26A21',
+                'orange-hover': '#D95A15',
+                'orange-tint': '#FEF0E7',
+                text: '#1E1E1E',
+                'text-secondary': '#4A4A4A',
+                'text-muted': '#7A7A7A',
+                dark: '#12181A',
+                graphite: '#1B2224',
+                offwhite: '#F7F9FA',
+                surface: '#FFFFFF',
+                border: '#E3E8EA',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Inter', 'Montserrat', sans-serif;
+            background-color: #F7F9FA;
+            color: #1E1E1E;
+            margin: 0;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: pan-x pan-y; 
+            overscroll-behavior-y: none;
+        }
+        
+        * {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        
+        *::-webkit-scrollbar {
+            display: none;
+            width: 0px;
+            height: 0px;
+            background: transparent;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#F7F9FA] text-[#1E1E1E]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

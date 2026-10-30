@@ -1,0 +1,111 @@
+:root {
+  /* Amanitech Academy Design Tokens */
+  /* PRIMARY (teal/turquesa do triângulo "play") */
+  --color-brand-primary: #1BA9A2;
+  --color-brand-primary-hover: #148F89;
+  --color-brand-primary-dark: #148F89;
+  --color-brand-primary-deep: #0E6B66;
+  --color-brand-primary-light: #1BA9A2;
+  --color-brand-primary-tint: #E6F7F6;
+
+  /* ACCENT / SECONDARY (laranja do wordmark "Tech") */
+  --color-brand-orange: #F26A21;
+  --color-brand-orange-hover: #D95A15;
+  --color-brand-orange-tint: #FEF0E7;
+
+  /* NEUTRAL / TEXTO (preto grafite do wordmark "Amani") */
+  --color-brand-text: #1E1E1E;
+  --color-brand-text-secondary: #4A4A4A;
+  --color-brand-text-muted: #7A7A7A;
+
+  /* BACKGROUND / SUPERFÍCIE */
+  --color-brand-offwhite: #F7F9FA;
+  --color-brand-surface: #FFFFFF;
+  --color-brand-border: #E3E8EA;
+
+  /* DARK SURFACES */
+  --color-brand-dark: #12181A;
+  --color-brand-graphite: #1B2224;
+
+  /* ESTADOS */
+  --color-brand-success: #1BA9A2;
+  --color-brand-warning: #F26A21;
+  --color-brand-error: #C62828;
+  --color-brand-info: #1565C0;
+}
+
+body {
+  background-color: #12181A;
+  color: #FFFFFF;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Invisible clean scrollbars across all browsers & webviews */
+.hide-scrollbar,
+.custom-scrollbar,
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+/* Smooth brand utilities */
+.bg-brand-primary {
+  background-color: #1BA9A2;
+}
+.bg-brand-primary-deep {
+  background-color: #0E6B66;
+}
+.bg-brand-orange {
+  background-color: #F26A21;
+}
+.text-brand-primary {
+  color: #1BA9A2;
+}
+.text-brand-orange {
+  color: #F26A21;
+}
+.text-brand-dark {
+  color: #12181A;
+}
+.text-brand-neutral {
+  color: #1E1E1E;
+}
+
+/* Motivo Gráfico: Triângulo "Play" do Logo Amanitech */
+.play-motif {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #1BA9A2;
+}
+
+.play-motif-orange {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #F26A21;
+}
+
+/* 3D Gloss / Metallic Finish for Logo and Video Player */
+.gloss-metallic {
+  box-shadow: 0 4px 20px rgba(27, 169, 162, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.player-gloss-btn {
+  background: radial-gradient(circle at 30% 30%, #1BA9A2 0%, #148F89 70%, #0E6B66 100%);
+  box-shadow: 0 8px 24px rgba(27, 169, 162, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+}

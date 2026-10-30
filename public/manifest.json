@@ -1,0 +1,39 @@
+{
+  "id": "/",
+  "name": "AMANITECH ACADEMY - Plateforme d'Apprentissage, Technologie & Climat",
+  "short_name": "Amanitech Academy",
+  "description": "Plateforme éducative de l'AMANITECH : adaptive learning et adaptive streaming pour former le capital humain en technologie, durabilité et marchés climatiques en RDC et en Afrique.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#12181A",
+  "theme_color": "#12181A",
+  "categories": ["education", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
